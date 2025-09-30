@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>American Science Cloud (AmSC)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- USWDS Styles via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.10.0/dist/css/uswds.min.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <script src="https://cdn.jsdelivr.net/npm/@uswds/uswds@3.10.0/dist/js/uswds.min.js" defer></script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .grid-container {
+      max-width: 84rem;
+    }
+    /* Hero */
+    .amsc-hero {
+      position: relative;
+      color: white;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(circle at center, #10c4f3, #002056);
+    }
+    .amsc-hero__overlay {
+      display: none; /* no longer needed since gradient is baked in */
+    }
+    .amsc-hero .grid-container {
+      position: relative;
+      z-index: 2;
+    }
+    .amsc-hero__content {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .amsc-hero__content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .amsc-hero__content p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .amsc-logo {
+      max-width: 350px;
+      margin-bottom: 1.5rem;
+    }
+    .amsc-section h2::after {
+      content: '';
+      display: block;
+      width: 10%;
+      height: 4px;
+      background-color: red;
+      margin: 8px 0;
+    }
+    /* Alternating sections */
+    .amsc-section img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Vertically center alternating section rows ONLY */
+    .amsc-section.alt .grid-row {
+      display: flex;
+      align-items: center;
+    }
+    /* Section 2 order swap on mobile */
+    .section2-content {
+      order: 2;
+    }
+    .section2-image {
+      order: 1;
+    }
+    @media (min-width: 640px) {
+      .section2-content {
+        order: 1;
+      }
+      .section2-image {
+        order: 2;
+      }
+    }
+    /* Partners + Cards */
+    .partner-logos img {
+      max-height: 60px;
+      margin: 1rem;
+    }
+    /* Fix white text issue in dark sections */
+    .usa-section--dark .usa-card__body,
+    .usa-section--dark .usa-card__header {
+      color: #1b1b1b;
+    }
+    /* Equal-height cards (partnership section) */
+    .usa-section .grid-row {
+      align-items: stretch;
+    }
+    .usa-card {
+      height: 100%;
+    }
+    .usa-card__container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    h3.usa-card__heading {
+      text-align: center;
+    }
+    /* Card icons */
+    .usa-card__icon {
+      display: block;
+      margin: 1rem auto 0.5rem auto;
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="amsc-hero">
+    <div class="grid-container">
+      <div class="amsc-hero__content">
+        <img src="img/logo.svg" alt="AmSC Logo" class="amsc-logo">
+        <h1>Empowering DOE’s National Labs</h1>
+        <p>Accelerating innovation with AI and advanced computing.</p>
+        <a class="usa-button usa-button--secondary" href="#about">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1 -->
+  <section id="about" class="usa-section amsc-section alt">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-6">
+          <img src="img/section1.svg" alt="AmSC Overview">
+        </div>
+        <div class="tablet:grid-col-6">
+          <h2>What is AmSC: A Platform for Transformative Science</h2>
+          <p>AmSC is a secure, federated, and science-optimized cloud environment that integrates the DOE’s world-leading computing and experimental facilities, data resources, and high-performance networks.</p>
+          <p>AmSC enables DOE scientists to create, access, and integrate world-class AI-ready datasets, run scalable model training on leadership-class systems, perform distributed simulations, control instruments, and move data efficiently across sites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="usa-section usa-section--light amsc-section alt">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-6 section2-content">
+          <h2>What Will AmSC Provide: Advanced AI Tools for Scientific Discovery</h2>
+          <ul>
+            <li><strong>Data Services:</strong> Ensure DOE’s vital data assets are FAIR and AI-ready.</li>
+            <li><strong>Model Services:</strong> Enable access to state-of-the-art models for scientific discovery.</li>
+            <li><strong>At-Scale Services:</strong> Harness leadership-class systems for extreme-scale model training and inference.</li>
+            <li><strong>Infrastructure Services:</strong> Provide secure, uniform access to compute, storage, and networking across DOE and cloud partners.</li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col-6 section2-image">
+          <img src="img/section2.svg" alt="AI Tools">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="usa-section amsc-section alt">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-6">
+          <img src="img/section3.svg" alt="Scientific Collaboration">
+        </div>
+        <div class="tablet:grid-col-6">
+          <h2>What Will AmSC Achieve: A New Era of Interconnected Research</h2>
+          <p>AmSC’s objective is to establish a durable and extensible platform that empowers DOE’s scientific community to accelerate innovation with AI and advanced computing.</p>
+          <p>By combining intuitive interfaces, scalable services, and DOE’s unparalleled scientific assets, AmSC embeds AI at the core of research to drive faster and more impactful discovery.</p>
+          <p>Once deployed, the AmSC Platform will support DOE mission use cases, deliver core API-driven services, and demonstrate seamless interoperability across facilities and partners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Public-Private Partnerships Section -->
+  <section class="usa-section usa-section--light">
+    <div class="grid-container">
+      <h2 style="text-align: center;">Public-Private Partnerships Framework</h2>
+      <div class="grid-row grid-gap">
+
+        <div class="tablet:grid-col-4">
+          <div class="usa-card">
+            <div class="usa-card__container">
+              <img src="img/shield.svg" alt="Technology Validation icon" class="usa-card__icon">
+              <div class="usa-card__header">
+                <h3 class="usa-card__heading">Technology Validation</h3>
+              </div>
+              <div class="usa-card__body">
+                <p>Cloud service providers and vendors will validate technologies against extreme-scale scientific and national security workloads, co-design solutions with a high-value research community, and evolve pilot deployments into sustainable offerings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tablet:grid-col-4">
+          <div class="usa-card">
+            <div class="usa-card__container">
+              <img src="img/shake.svg" alt="Long-term Partnerships icon" class="usa-card__icon">
+              <div class="usa-card__header">
+                <h3 class="usa-card__heading">Long-term Partnerships</h3>
+              </div>
+              <div class="usa-card__body">
+                <p>Participation strengthens long-term partnerships with DOE and expands opportunities for innovation. Secure data access in CSP environments creates new avenues for industry and the public to leverage scientific data.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tablet:grid-col-4">
+          <div class="usa-card">
+            <div class="usa-card__container">
+              <img src="img/reserve.svg" alt="Strategic Computing Reserve icon" class="usa-card__icon">
+              <div class="usa-card__header">
+                <h3 class="usa-card__heading">Strategic Computing Reserve</h3>
+              </div>
+              <div class="usa-card__body">
+                <p>This model charts a path toward a National Strategic Computing and AI Reserve, supporting both steady-state research and surge capacity in times of crisis, ensuring resilience and U.S. competitiveness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="usa-section usa-section--dark">
+    <div class="grid-container">
+      <h2 style="text-align: center;">Partners</h2>
+      <div class="partner-logos grid-row grid-gap">
+        <div class="grid-col-3"><img src="https://via.placeholder.com/150x60?text=ORNL" alt="ORNL"></div>
+        <div class="grid-col-3"><img src="https://via.placeholder.com/150x60?text=ANL" alt="ANL"></div>
+        <div class="grid-col-3"><img src="https://via.placeholder.com/150x60?text=NVIDIA" alt="NVIDIA"></div>
+        <div class="grid-col-3"><img src="https://via.placeholder.com/150x60?text=AWS" alt="AWS"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="usa-footer usa-footer--slim">
+    <div class="grid-container">
+      <p>&copy; 2025 American Science Cloud</p>
+    </div>
+  </footer>
+
+</body>
+</html>
