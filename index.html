@@ -29,9 +29,6 @@
       align-items: center;
       background: radial-gradient(circle at center, #10c4f3, #002056);
     }
-    .amsc-hero__overlay {
-      display: none; /* no longer needed since gradient is baked in */
-    }
     .amsc-hero .grid-container {
       position: relative;
       z-index: 2;
@@ -118,6 +115,15 @@
       width: 60px;
       height: 60px;
     }
+    /* Add vertical spacing between stacked cards on mobile */
+    .usa-section .grid-row > .tablet\:grid-col-4 {
+      margin-bottom: 1.5rem;
+    }
+    @media (min-width: 640px) {
+      .usa-section .grid-row > .tablet\:grid-col-4 {
+        margin-bottom: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -190,7 +196,7 @@
   <!-- Public-Private Partnerships Section -->
   <section class="usa-section usa-section--light">
     <div class="grid-container">
-      <h2 style="text-align: center;">Public-Private Partnerships Framework</h2>
+      <h2>Public-Private Partnerships Framework</h2>
       <div class="grid-row grid-gap">
 
         <div class="tablet:grid-col-4">
@@ -242,7 +248,7 @@
   <!-- Partners -->
   <section class="usa-section usa-section--dark">
     <div class="grid-container">
-      <h2 style="text-align: center;">Partners</h2>
+      <h2>Partners</h2>
       <div class="partner-logos grid-row grid-gap">
         <div class="grid-col-3"><img src="https://via.placeholder.com/150x60?text=ORNL" alt="ORNL"></div>
         <div class="grid-col-3"><img src="https://via.placeholder.com/150x60?text=ANL" alt="ANL"></div>
