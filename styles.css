@@ -88,7 +88,7 @@ h2.centered-heading::after {
   max-width: 100%;
   display: block;
   margin: 1rem auto;
-  filter: grayscale(100%) brightness(0) invert(0%);
+  filter: grayscale(100%) brightness(0) invert(50%);
   opacity: 0.9;
   transition: filter 0.3s ease, opacity 0.3s ease;
 }
