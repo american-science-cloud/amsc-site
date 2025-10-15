@@ -64,7 +64,7 @@ const config: Config = {
     navbar: {
       title: 'AmSC',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'AmSC Logo',
         src: 'img/amsc_min_logo.svg',
       },
       items: [
