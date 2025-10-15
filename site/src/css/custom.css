@@ -1,0 +1,56 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* === AmSC Color Theme === */
+  --ifm-color-primary: #002056;
+  --ifm-color-primary-dark: #00193d;
+  --ifm-color-primary-darker: #00112b;
+  --ifm-color-primary-darkest: #000a1a;
+  --ifm-color-primary-light: #0c4ca3;
+  --ifm-color-primary-lighter: #005ea2;
+  --ifm-color-primary-lightest: #7fe8ff;
+  --ifm-footer-background-color: #002056;
+
+  /* === Accent Colors === */
+  --ifm-color-secondary: #ccc; /* Red accent (used in section underline, etc.) */
+  --ifm-link-color: var(--ifm-color-primary-lighter);
+  --ifm-link-hover-color: var(--ifm-color-primary-light);
+
+  /* === Typography === */
+  --ifm-font-family-base: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  --ifm-line-height-base: 1.6;
+  --ifm-code-font-size: 100%;
+
+  /* === Code Highlighting === */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+
+  /* === Navbar & Footer === */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-link-color: #002056;
+  --ifm-navbar-link-hover-color: #10c4f3;
+  --ifm-footer-background-color: #000000;
+}
+
+/* === Dark Mode === */
+[data-theme='dark'] {
+  --ifm-color-primary: #10c4f3;
+  --ifm-color-primary-dark: #0eafd8;
+  --ifm-color-primary-darker: #0a8fb3;
+  --ifm-color-primary-darkest: #076f8d;
+  --ifm-color-primary-light: #3cdcff;
+  --ifm-color-primary-lighter: #7fe8ff;
+  --ifm-color-primary-lightest: #b5f4ff;
+
+  --ifm-link-color: var(--ifm-color-primary);
+  --ifm-link-hover-color: var(--ifm-color-primary-light);
+
+  --ifm-navbar-background-color: #0a0f1a;
+  --ifm-footer-background-color: #0a0f1a;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
