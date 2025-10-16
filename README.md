@@ -1,41 +1,129 @@
-# Website
+# American Science Cloud — Documentation Site
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository hosts the **American Science Cloud** documentation site built with **Docusaurus 3** and the **U.S. Web Design System (USWDS)** framework.  
+It includes a local development environment and an automated deployment pipeline to **GitHub Pages**.
 
-## Installation
+---
 
-```bash
-yarn
-```
+## Live Site
+
+🔗 https://american-science-cloud.github.io/amsc-site/
+
+---
+
+## About USWDS Integration
+
+This site uses the **U.S. Web Design System (USWDS)** — https://designsystem.digital.gov/ — for its design foundation and component styling.  
+USWDS provides standardized, accessible front-end patterns used across U.S. government websites.
+
+Key benefits:
+- Consistent, accessible design language compliant with federal standards  
+- Built-in typography, grid, spacing, and color utilities  
+- Responsive, mobile-first design system that integrates cleanly with Docusaurus themes
+
+The theme and component styles have been customized to align with the American Science Cloud’s branding while maintaining USWDS accessibility and usability standards.
+
+---
+
+## Local Setup (First-Time Install)
+
+If you're setting up this project for the first time:
+
+1. Clone the repository  
+ git clone https://github.com/american-science-cloud/amsc-site.git  
+ cd amsc-site  
+
+2. Install dependencies  
+ npm install  
+
+3. Run the development server  
+ npm run start  
+
+4. Visit your site locally at:  
+ http://localhost:3000  
+
+---
+
+## Project Structure
+
+amsc-site/
+├── build/                   # Production build output  
+├── docs/                    # Documentation pages  
+├── src/                     # Source files (home, components, etc.)  
+├── static/                  # Static assets  
+├── docusaurus.config.js     # Site configuration  
+├── package.json  
+└── .github/
+  └── workflows/
+    └── deploy.yml         # GitHub Actions workflow for automatic deploys  
+
+---
 
 ## Local Development
 
-```bash
-yarn start
-```
+Run the development server:  
+ npm run start  
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Your site will be available at http://localhost:3000  
 
-## Build
+Edits to Markdown and React files in `/docs` or `/src` reload automatically.
 
-```bash
-yarn build
-```
+---
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Test the Production Build Locally
 
-## Deployment
+Before deploying, verify the production build using the same settings as GitHub Pages.
 
-Using SSH:
+1. Build your site:  npm run build  
+2. Serve the build locally:  npm run serve  
+3. Open your browser to:  http://localhost:3000/amsc-site/  
 
-```bash
-USE_SSH=true yarn deploy
-```
+This tests your site exactly as it will appear on GitHub Pages, including the correct `baseUrl` (`/amsc-site/`).
 
-Not using SSH:
+---
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## Configuration Highlights
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- **Base URL:**  baseUrl: '/amsc-site/'   
+ Ensures all assets and routes work correctly on GitHub Pages.  
+
+- **Organization / Project Names:**    
+ organizationName: 'american-science-cloud'  
+ projectName: 'amsc-site'  
+
+- **Deployment branch:**  gh-pages  
+
+---
+
+## Common Commands
+
+| Command | Description |
+|----------|--------------|
+| npm run start | Start local dev server |
+| npm run build | Build production version |
+| npm run serve | Serve production build locally |
+| npm run deploy | Manually deploy site to GitHub Pages |
+| git push origin main | Trigger automatic deploy via GitHub Actions |
+
+---
+
+## Deployment Workflow
+
+### Automatic Deployment via GitHub Actions
+
+When you push changes to the **main** branch:
+
+1. GitHub Actions runs the workflow defined in `.github/workflows/deploy.yml`  
+2. It installs dependencies, builds the site, and deploys it to the **gh-pages** branch.  
+3. GitHub Pages serves the latest build automatically at https://american-science-cloud.github.io/amsc-site/  
+
+No manual steps required 🚀  
+
+---
+
+### Manual Deployment (optional)
+
+You can also deploy manually if needed:  
+ npm run deploy  
+
+This runs the Docusaurus deployment command locally, building the site and pushing the `build/` directory to the `gh-pages` branch.
