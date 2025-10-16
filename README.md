@@ -44,21 +44,6 @@ If you're setting up this project for the first time:
 
 ---
 
-## Project Structure
-
-amsc-site/
-├── build/                   # Production build output  
-├── docs/                    # Documentation pages  
-├── src/                     # Source files (home, components, etc.)  
-├── static/                  # Static assets  
-├── docusaurus.config.js     # Site configuration  
-├── package.json  
-└── .github/
-  └── workflows/
-    └── deploy.yml         # GitHub Actions workflow for automatic deploys  
-
----
-
 ## Local Development
 
 Run the development server:  
@@ -95,18 +80,6 @@ This tests your site exactly as it will appear on GitHub Pages, including the co
 
 ---
 
-## Common Commands
-
-| Command | Description |
-|----------|--------------|
-| npm run start | Start local dev server |
-| npm run build | Build production version |
-| npm run serve | Serve production build locally |
-| npm run deploy | Manually deploy site to GitHub Pages |
-| git push origin main | Trigger automatic deploy via GitHub Actions |
-
----
-
 ## Deployment Workflow
 
 ### Automatic Deployment via GitHub Actions
@@ -117,7 +90,7 @@ When you push changes to the **main** branch:
 2. It installs dependencies, builds the site, and deploys it to the **gh-pages** branch.  
 3. GitHub Pages serves the latest build automatically at https://american-science-cloud.github.io/amsc-site/  
 
-No manual steps required 🚀  
+No manual steps required  
 
 ---
 
