@@ -11,6 +11,20 @@ It includes a local development environment and an automated deployment pipeline
 
 ---
 
+## About Docusaurus
+
+This site is built using **Docusaurus 3** — https://docusaurus.io — an open-source static site generator designed for modern documentation websites.
+
+Docusaurus provides:
+- A fast, React-based framework optimized for content-driven sites  
+- Markdown-based documentation pages with automatic navigation and versioning  
+- Built-in search, theming, and internationalization support  
+- A simple build-and-deploy workflow ideal for GitHub Pages
+
+Docusaurus documentation: https://docusaurus.io/docs
+
+---
+
 ## About USWDS Integration
 
 This site uses the **U.S. Web Design System (USWDS)** — https://designsystem.digital.gov/ — for its design foundation and component styling.  
