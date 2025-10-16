@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://american-science-cloud.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/amsc-site/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'American Science Cloud', // Usually your GitHub org/user name.
+  organizationName: 'american-science-cloud', // Usually your GitHub org/user name.
   projectName: 'amsc-site', // Usually your repo name.
 
   onBrokenLinks: 'throw',
