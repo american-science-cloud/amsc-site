@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunksite=globalThis.webpackChunksite||[]).push([[1999],{3861:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/amsc-site/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
