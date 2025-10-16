@@ -37,7 +37,7 @@ export default function Projects() {
             <div className="grid-col-12">
               <h2 className="centered-heading">Coming Soon</h2>
               <p style={{ textAlign: 'center', fontSize: '1.25rem' }}>
-                Stay tuned — exciting projects are on the horizon.
+                Stay tuned — new exciting projects are on the horizon.
               </p>
             </div>
           </div>
