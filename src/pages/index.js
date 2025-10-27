@@ -27,7 +27,7 @@ export default function Home() {
         <div className="grid-container">
           <div className="amsc-hero__content">
             <img
-              src="img/amsc_logo_fill.svg"
+              src="img/amsc_logo_new.svg"
               alt="AmSC Logo"
               className="amsc-logo"
             />
