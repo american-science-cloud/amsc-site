@@ -98,19 +98,20 @@ This tests your site exactly as it will appear on GitHub Pages, including the co
 
 ### Automatic Deployment via GitHub Actions
 
-When you push changes to the **main** branch:
+All updates are deployed automatically when changes are merged into the **main** branch.
 
-1. GitHub Actions runs the workflow defined in `.github/workflows/deploy.yml`  
-2. It installs dependencies, builds the site, and deploys it to the **gh-pages** branch.  
-3. GitHub Pages serves the latest build automatically at https://american-science-cloud.github.io/amsc-site/  
+Standard workflow:
 
-No manual steps required  
+1. Create a new branch for your changes  
+2. Commit and push your updates to the branch  
+3. Open a Pull Request (PR) targeting `main`  
+4. Request review and approval  
+5. Merge the PR into `main` once approved
 
----
+When the Pull Request is merged:
 
-### Manual Deployment (optional)
-
-You can also deploy manually if needed:  
- npm run deploy  
-
-This runs the Docusaurus deployment command locally, building the site and pushing the `build/` directory to the `gh-pages` branch.
+- GitHub Actions runs the workflow defined in `.github/workflows/deploy.yml`  
+- Dependencies are installed and the site is built  
+- The production build is deployed to the `gh-pages` branch  
+- GitHub Pages immediately serves the updated site at:  
+  https://american-science-cloud.github.io/amsc-site/
