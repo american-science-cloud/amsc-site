@@ -70,6 +70,11 @@ const config: Config = {
       items: [
         {to: '/projects', label: 'Projects', position: 'left'},
         {
+      to: '/events',
+      label: 'Events',
+      position: 'left',
+    },
+        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
