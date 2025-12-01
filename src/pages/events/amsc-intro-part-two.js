@@ -60,13 +60,6 @@ export default function AmscIntroPartTwo() {
                 AmSC ecosystem. Agenda and content are currently in development.
               </p>
 
-              <h2 className="border-heading">Topics in Development</h2>
-              <ul>
-                <li>Expanded architecture overview</li>
-                <li>Early platform demonstrations</li>
-                <li>Data, model, and workflow service previews</li>
-                <li>Roadmap for pilot engagement</li>
-              </ul>
 
               <h2 className="border-heading">Event Materials</h2>
               <p>Materials will be added as they become available.</p>
