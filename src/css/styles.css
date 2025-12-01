@@ -152,4 +152,19 @@ h3.usa-card__heading {
   }
 }
 
+/* Make heroes inside MDX pages bleed full width */
+.full-bleed-hero {
+  /* break out of Docusaurus .container width */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  /* optional: pull it up to sit tight under the navbar */
+  margin-top: calc(-1 * var(--ifm-spacing-vertical, 2rem));
+}
+
+/* Keep the inner content aligned with other sections */
+.full-bleed-hero .grid-container {
+  max-width: 80rem;
+  margin-inline: auto;
+}
 
