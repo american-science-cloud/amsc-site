@@ -42,9 +42,8 @@ nav {
   margin-bottom: 0;
 }
 h2.centered-heading {
-    text-align: center;
-    padding-bottom: 20px;
-
+  text-align: center;
+  padding-bottom: 20px;
 }
 h2.centered-heading::after {
   content: '';
@@ -101,7 +100,7 @@ h2.border-heading::after {
   opacity: 1;
 }
 .partner-logos.grid-row.grid-gap > div {
-    padding:20px;
+  padding: 20px;
 }
 /* Fix white text issue in dark sections */
 .usa-section--dark .usa-card__body,
@@ -109,7 +108,7 @@ h2.border-heading::after {
   color: #1b1b1b;
 }
 .partner-logos.grid-row.grid-gap {
-    align-items: center;
+  align-items: center;
 }
 /* Equal-height cards */
 .usa-section .grid-row {
@@ -127,7 +126,7 @@ h3.usa-card__heading {
   text-align: center;
 }
 .usa-card__body p {
-    color: #1b1b1b;
+  color: #1b1b1b;
 }
 /* Card icons */
 .usa-card__icon {
@@ -188,7 +187,6 @@ h3.usa-card__heading {
   max-width: none !important;
 }
 
-
 /* Optional: give the upcoming event card a nice subtle shadow */
 .amsc-event-card {
   margin-top: 2rem;
@@ -197,7 +195,40 @@ h3.usa-card__heading {
 /* Optional: image styling */
 .amsc-event-image {
   width: 100%;
+  max-width: 100%;
   border-radius: 6px;
 }
 
+/* --- Fallback layout for upcoming event card (in case USWDS grid isn't active) --- */
 
+/* Ensure the row behaves like a flex row */
+.amsc-event-card .grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Image column: full width on mobile */
+.amsc-event-card .grid-row > .tablet\:grid-col-4 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Details column: full width on mobile */
+.amsc-event-card .grid-row > .tablet\:grid-col-8 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* On tablet+ switch to 4/8 layout */
+@media (min-width: 640px) {
+  .amsc-event-card .grid-row > .tablet\:grid-col-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .amsc-event-card .grid-row > .tablet\:grid-col-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+  }
+}
