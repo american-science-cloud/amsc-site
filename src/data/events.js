@@ -11,7 +11,7 @@ export const events = [
     audience: 'DOE labs, facilities, and partners',
     heroTagline: 'November 13, 2025 · Virtual',
     summary:
-      'The AmSC introductory webinar brings together researchers, facility staff, and partners to explore Al- and data-driven workflows across DOE.',
+      'The AmSC introductory webinar brings together technical teams, facility staff, researchers, and partners to explore the AmSC mission and partnerships.',
   },
 
   {
