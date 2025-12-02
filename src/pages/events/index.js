@@ -8,7 +8,8 @@ import { events } from '@site/src/data/events';
 
 export default function EventsPage() {
   // ---- Split events into upcoming + past ----
-  const upcomingEvents = events.filter((e) => !e.dateISO); // TBD or no date → upcoming
+  // Convention: upcoming events have dateISO = null (or omitted)
+  const upcomingEvents = events.filter((e) => !e.dateISO);
   const pastEvents = events
     .filter((e) => e.dateISO)
     .sort((a, b) => new Date(b.dateISO) - new Date(a.dateISO));
@@ -47,16 +48,13 @@ export default function EventsPage() {
           {upcomingEvents.map((event) => (
             <div
               key={event.slug}
-              className="usa-card"
+              className="usa-card amsc-event-card"
               style={{ marginTop: '2rem' }}
             >
-              <div
-                className="usa-card__container"
-                style={{ padding: '1.5rem' }}
-              >
+              <div className="usa-card__container">
                 <div className="grid-row grid-gap">
-                  {/* Event Image */}
-                  <div className="tablet:grid-col-3">
+                  {/* Event Image (4 columns) */}
+                  <div className="tablet:grid-col-4 amsc-event-image">
                     <img
                       src={defaultEventImg}
                       alt="Event"
@@ -64,8 +62,8 @@ export default function EventsPage() {
                     />
                   </div>
 
-                  {/* Event Info */}
-                  <div className="tablet:grid-col-9">
+                  {/* Event Info (8 columns) */}
+                  <div className="tablet:grid-col-8 amsc-event-details">
                     <h3>{event.title}</h3>
 
                     <p style={{ fontSize: '1rem' }}>
@@ -81,19 +79,14 @@ export default function EventsPage() {
                       }}
                     >
                       <li>
-                        <strong>Date:</strong>{' '}
-                        {event.dateLabel || 'TBD'}
+                        <strong>Date:</strong> {event.dateLabel || 'TBD'}
                       </li>
                       <li>
                         <strong>Location:</strong> {event.location || 'TBD'}
                       </li>
                     </ul>
 
-                    <Link
-                      className="usa-button"
-                      style={{ marginTop: '0.5rem' }}
-                      to={`/events/${event.slug}`}
-                    >
+                    <Link className="usa-button" to={`/events/${event.slug}`}>
                       View Event Details
                     </Link>
                   </div>
@@ -105,7 +98,10 @@ export default function EventsPage() {
       </section>
 
       {/* ---- PAST EVENTS (Grey Background) ---- */}
-      <section className="usa-section usa-section--light" style={{ marginTop: '3rem' }}>
+      <section
+        className="usa-section usa-section--light"
+        style={{ marginTop: '3rem' }}
+      >
         <div className="grid-container">
           <h2 className="centered-heading">Past Events</h2>
 
@@ -120,8 +116,12 @@ export default function EventsPage() {
 
                     <div className="usa-card__body">
                       <p>{event.summary}</p>
-                      <p><strong>Date:</strong> {event.date}</p>
-                      <p><strong>Location:</strong> {event.location}</p>
+                      <p>
+                        <strong>Date:</strong> {event.date}
+                      </p>
+                      <p>
+                        <strong>Location:</strong> {event.location}
+                      </p>
                     </div>
 
                     <div className="usa-card__footer">
