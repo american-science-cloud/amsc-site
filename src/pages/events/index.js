@@ -79,10 +79,10 @@ export default function EventsPage() {
                       }}
                     >
                       <li>
-                        <strong>Date:</strong> {event.dateLabel || 'TBD'}
+                        <strong>Date:</strong> {event.dateLabel || 'January 20, 2026'}
                       </li>
                       <li>
-                        <strong>Location:</strong> {event.location || 'TBD'}
+                        <strong>Location:</strong> {event.location || 'Virtual'}
                       </li>
                     </ul>
 
