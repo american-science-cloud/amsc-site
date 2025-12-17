@@ -18,9 +18,9 @@ export const events = [
     slug: 'amsc-intro-part-two',
     title: 'Introduction to the American Science Cloud (AmSC): Part Two',
     // No concrete date yet
-    dateLabel: 'TBD',
+    dateLabel: 'January 20, 2026',
     dateISO: null, // treat as upcoming
-    location: 'TBD',
+    location: 'Virtual',
     audience: 'DOE labs, facilities, and partners',
     heroTagline: 'Details coming soon',
     summary:
