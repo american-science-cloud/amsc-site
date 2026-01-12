@@ -89,7 +89,7 @@ export default function AmscIntroPartTwo() {
                   </div>
                   <div className="usa-card__body">
                     <p><strong>Date:</strong> January 20, 2026 3:30 - 5:00 ET</p>
-                    <p><strong>Location:</strong> Virtual</p>
+                    <p><strong>Location:</strong> Virtual, request access: help@amscproject.atlassian.net </p>
                     <p><strong>Audience:</strong> Genesis, DOE labs, facilities, and partners</p>
                   </div>
                   <div className="usa-card__footer">
