@@ -11,7 +11,7 @@ export default function AmscIntroPartTwo() {
   return (
     <Layout
       title="Introduction to the American Science Cloud (AmSC): Part Two"
-      description="Introduction to the American Science Cloud (AmSC): Part Two · Details Coming Soon · Virtual"
+      description="Introduction to the American Science Cloud (AmSC): Part Two · January 20, 2026 · Virtual"
     >
       <Head>
         <link
@@ -29,7 +29,7 @@ export default function AmscIntroPartTwo() {
         <div className="grid-container">
           <div className="amsc-hero__content">
             <h1>Introduction to the American Science Cloud (AmSC): Part Two</h1>
-            <p>Details Coming Soon · Virtual</p>
+            <p>January 20, 2026 · Virtual</p>
           </div>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function AmscIntroPartTwo() {
               <p>
                 Part Two of the AmSC Introduction Series will build on the foundational
                 concepts from Part One and provide deeper insights into the evolving
-                AmSC ecosystem. Agenda and content are currently in development.
+                AmSC ecosystem. 
               </p>
 
               <h2 className="border-heading">Event Materials</h2>
@@ -88,9 +88,9 @@ export default function AmscIntroPartTwo() {
                     <h3 className="usa-card__heading">Event Details</h3>
                   </div>
                   <div className="usa-card__body">
-                    <p><strong>Date:</strong> January 20, 2026</p>
+                    <p><strong>Date:</strong> January 20, 2026 3:30 - 5:00 ET</p>
                     <p><strong>Location:</strong> Virtual</p>
-                    <p><strong>Audience:</strong> DOE labs, facilities, and partners</p>
+                    <p><strong>Audience:</strong> Genesis, DOE labs, facilities, and partners</p>
                   </div>
                   <div className="usa-card__footer">
                     {/* Future content (e.g., registration link) can go here */}
