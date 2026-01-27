@@ -71,6 +71,15 @@ export default function AmscIntroPartTwo() {
                     Download Slides (PDF)
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://vimeo.com/1158932511"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Recording (Vimeo)
+                  </a>
+                </li>
               </ul>
             </div>
 
