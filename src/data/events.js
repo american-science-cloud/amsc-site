@@ -17,12 +17,12 @@ export const events = [
   {
     slug: 'amsc-intro-part-two',
     title: 'Introduction to the American Science Cloud (AmSC): Part Two',
-    // No concrete date yet
+    date: 'January 20, 2026',
     dateLabel: 'January 20, 2026',
-    dateISO: null, // treat as upcoming
+    dateISO: '2026-01-20',
     location: 'Virtual',
     audience: 'DOE labs, facilities, and partners',
-    heroTagline: 'Details coming soon',
+    heroTagline: 'January 20, 2026 · Virtual',
     summary:
       'A follow-up event that will dive deeper into AmSC capabilities and roadmap.',
   },
