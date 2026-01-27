@@ -61,22 +61,16 @@ export default function AmscIntroPartTwo() {
               </p>
 
               <h2 className="border-heading">Event Materials</h2>
-              <p>Materials will be added as they become available.</p>
-
-              {/* Example of how files will be linked once available */}
               <ul>
-                {/* Uncomment once materials exist */}
-                {/* 
-                <li>
+                  <li>
                   <a
-                    href={`${mediaUrl}AmSC_Part_Two_Slides.pdf`}
+                    href={`${mediaUrl}AmSC_January_Webinar_Part2_Slides.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Slides (PDF)
+                    Download Slides (PDF)
                   </a>
                 </li>
-                */}
               </ul>
             </div>
 
