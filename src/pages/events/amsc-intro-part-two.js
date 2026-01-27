@@ -55,8 +55,8 @@ export default function AmscIntroPartTwo() {
             <div className="tablet:grid-col-8">
               <h2 className="border-heading">Overview</h2>
               <p>
-                Part Two of the AmSC Introduction Series will build on the foundational
-                concepts from Part One and provide deeper insights into the evolving
+                Part Two of the AmSC Introduction Series builds on the foundational
+                concepts from Part One and provides deeper insights into the evolving
                 AmSC ecosystem. 
               </p>
 
@@ -83,7 +83,7 @@ export default function AmscIntroPartTwo() {
                   </div>
                   <div className="usa-card__body">
                     <p><strong>Date:</strong> January 20, 2026 3:30 - 5:00 ET</p>
-                    <p><strong>Location:</strong> Virtual, request access: help@amscproject.atlassian.net </p>
+                    <p><strong>Location:</strong> Virtual </p>
                     <p><strong>Audience:</strong> Genesis, DOE labs, facilities, and partners</p>
                   </div>
                   <div className="usa-card__footer">
