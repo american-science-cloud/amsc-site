@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 
-export default function Home(): JSX.Element {
+export default function NotFound(): JSX.Element {
   useEffect(() => {
     window.location.replace('https://amsc.energy.gov/');
   }, []);
 
   return (
-    <Layout title="Site moved" description="This site has moved">
+    <Layout title="Page moved" description="This site has moved">
       <Head>
         <meta httpEquiv="refresh" content="0; url=https://amsc.energy.gov/" />
         <link rel="canonical" href="https://amsc.energy.gov/" />
