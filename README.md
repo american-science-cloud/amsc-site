@@ -1,117 +1,91 @@
-# American Science Cloud — Documentation Site
+# American Science Cloud --- Legacy Documentation Site
 
-This repository hosts the **American Science Cloud** documentation site built with **Docusaurus 3** and the **U.S. Web Design System (USWDS)** framework.  
-It includes a local development environment and an automated deployment pipeline to **GitHub Pages**.
+⚠️ **This repository hosts a retired version of the American Science
+Cloud documentation site.**
 
----
+The original site previously deployed to **GitHub Pages** has been
+**decommissioned** and now redirects visitors to the official platform
+website.
 
-## Live Site
+### Current Official Site
 
-🔗 https://american-science-cloud.github.io/amsc-site/
+🔗 **https://amsc.energy.gov/**
 
----
+All users should access the American Science Cloud information through
+the official site above.
 
-## About Docusaurus
+------------------------------------------------------------------------
 
-This site is built using **Docusaurus 3** — https://docusaurus.io — an open-source static site generator designed for modern documentation websites.
+# Repository Purpose
 
-Docusaurus provides:
-- A fast, React-based framework optimized for content-driven sites  
-- Markdown-based documentation pages with automatic navigation and versioning  
-- Built-in search, theming, and internationalization support  
-- A simple build-and-deploy workflow ideal for GitHub Pages
+This repository is retained **only to preserve the GitHub Pages URL and
+redirect traffic** from the previous documentation site.
 
-Docusaurus documentation: https://docusaurus.io/docs
+Visitors accessing the legacy URL:
 
----
+https://american-science-cloud.github.io/amsc-site/
 
-## About USWDS Integration
+are automatically redirected to:
 
-This site uses the **U.S. Web Design System (USWDS)** — https://designsystem.digital.gov/ — for its design foundation and component styling.  
-USWDS provides standardized, accessible front-end patterns used across U.S. government websites.
+https://amsc.energy.gov/
 
-Key benefits:
-- Consistent, accessible design language compliant with federal standards  
-- Built-in typography, grid, spacing, and color utilities  
-- Responsive, mobile-first design system that integrates cleanly with Docusaurus themes
+This ensures that:
 
-The theme and component styles have been customized to align with the American Science Cloud’s branding while maintaining USWDS accessibility and usability standards.
+-   existing bookmarks continue to work\
+-   external links to the previous site remain functional\
+-   search engines and automated references reach the correct
+    destination
 
----
+------------------------------------------------------------------------
 
-## Local Setup (First-Time Install)
+# Legacy Implementation Details
 
-If you're setting up this project for the first time:
+The original site was built using:
 
-1. Clone the repository  
- git clone https://github.com/american-science-cloud/amsc-site.git  
- cd amsc-site  
+-   **Docusaurus 3** --- https://docusaurus.io\
+-   **U.S. Web Design System (USWDS)** ---
+    https://designsystem.digital.gov/
 
-2. Install dependencies  
- npm install  
+It included:
 
-3. Run the development server  
- npm run start  
+-   Markdown-based documentation pages\
+-   React-based UI components\
+-   automated deployment to GitHub Pages via GitHub Actions
 
-4. Visit your site locally at:  
- http://localhost:3000  
+The full documentation build system is no longer actively maintained in
+this repository.
 
----
+------------------------------------------------------------------------
 
-## Local Development
+# Deployment Status
 
-Run the development server:  
- npm run start  
+GitHub Pages remains enabled for this repository only to provide the
+redirect endpoint.
 
-Your site will be available at http://localhost:3000  
+https://american-science-cloud.github.io/amsc-site/
 
-Edits to Markdown and React files in `/docs` or `/src` reload automatically.
+The published site now consists solely of redirect logic that forwards
+visitors to:
 
----
+https://amsc.energy.gov/
 
-## Test the Production Build Locally
+------------------------------------------------------------------------
 
-Before deploying, verify the production build using the same settings as GitHub Pages.
+# Maintenance
 
-1. Build your site:  npm run build  
-2. Serve the build locally:  npm run serve  
-3. Open your browser to:  http://localhost:3000/amsc-site/  
+This repository should **not receive feature updates or content
+changes**.
 
-This tests your site exactly as it will appear on GitHub Pages, including the correct `baseUrl` (`/amsc-site/`).
+Future development and content updates for the American Science Cloud
+website occur in the repository that powers:
 
----
+https://amsc.energy.gov/
 
-## Configuration Highlights
+------------------------------------------------------------------------
 
-- **Base URL:**  baseUrl: '/amsc-site/'   
- Ensures all assets and routes work correctly on GitHub Pages.  
+# Archival Notice
 
-- **Organization / Project Names:**    
- organizationName: 'american-science-cloud'  
- projectName: 'amsc-site'  
+This repository is retained for historical reference and URL continuity.
 
-- **Deployment branch:**  gh-pages  
-
----
-
-## Deployment Workflow
-
-### Automatic Deployment via GitHub Actions
-
-All updates are deployed automatically when changes are merged into the **main** branch.
-
-Standard workflow:
-
-1. Create a new branch for your changes  
-2. Commit and push your updates to the branch  
-3. Open a Pull Request (PR) targeting `main`  
-4. Request review and approval  
-5. Merge the PR into `main` once approved
-
-When the Pull Request is merged:
-
-- GitHub Actions runs the workflow defined in `.github/workflows/deploy.yml`  
-- Dependencies are installed and the site is built  
-- The production build is deployed to the `gh-pages` branch  
-- GitHub Pages immediately serves the updated site at:  
-  https://american-science-cloud.github.io/amsc-site/
+If GitHub Pages links referencing this repository are no longer required
+in the future, the repository may be archived.
